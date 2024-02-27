@@ -2,7 +2,7 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => { 
-const {data:blogs,isPending, error} = useFetch('http://dojo-blog-app.vercel.app//blogs');
+const {data:blogs,isPending, error} = useFetch('http://dojo-blog-app.vercel.app/blogs');
 
  
 
