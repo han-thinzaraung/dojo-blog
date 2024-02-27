@@ -10,7 +10,7 @@ const Create = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = {title,body,author};
-    fetch('https://dojo-blog-app.vercel.app/',{
+    fetch('http://dojo-blog-app.vercel.app//blogs',{
         method: 'POST',
         headers: {'Content-Type' :  'application/json'},
         body:JSON.stringify(blog)
