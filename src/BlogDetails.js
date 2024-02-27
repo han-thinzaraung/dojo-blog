@@ -5,9 +5,9 @@ import useFetch from "./useFetch";
 const BlogDetails = () => {
     const history = useHistory();
     const {id} = useParams();
-    const {data:blog,error,isPending} = useFetch('http://dojo-blog-app.vercel.app/blogs/' + id);
+    const {data:blog,error,isPending} = useFetch('https://dojo-blog-app.vercel.app/blogs/' + id);
     const handleClick = () => {
-        fetch('http://dojo-blog-app.vercel.app/blogs/' + id , {
+        fetch('https://dojo-blog-app.vercel.app/blogs/' + id , {
             method:'DELETE' 
         }).then ((res) => {
             history.push('/');
